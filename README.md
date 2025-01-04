@@ -14,6 +14,6 @@
   [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geosite.srs)
 
 - **GeoSite for xray-core:**  
-  [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geodomain.dat)
+  [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geosite.dat)
 
 ---
