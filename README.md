@@ -13,7 +13,7 @@
 - **GeoSite for sing-box:**  
   [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geosite.srs)
 
-- **GeoDomain for xray-core:**  
+- **GeoSite for xray-core:**  
   [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geodomain.dat)
 
 ---
