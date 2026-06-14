@@ -7,22 +7,8 @@
 - **Hosts:**
   [View the list](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/hosts.txt)
 
-- **NSFW:**
-  [View the list](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/nsfw.txt)
-
 - **Domains:**
   [View the list](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/domains.txt)
-
-- **NSFW - Hosts:**
-  [View the list](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/nsfw-hosts.txt)
-
----
-
-- **Hosts + NSFW:**
-  [View the list](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/nsfw-domains-hosts.txt)
-
-- **Domains + NSFW:**
-  [View the list](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/nsfw-domains.txt)
 
 ---
 
@@ -34,10 +20,32 @@
 
 ---
 
-- **GeoSite + NSFW for sing-box:**
-  [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geosite-nsfw.srs)
+<details>
+<summary style="font-size: 1.1em;"><strong>Apply in RouterOS:</strong></summary>
 
-- **GeoSite + NSFW for xray-core / v2ray-core / mihomo:**
-  [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geosite-nsfw.dat)
+#### **Importation:**
 
----
+> **1. Load the `hosts.txt` file into the firmware**
+
+> **2. Change DNS cache size:**
+>> ```shell
+>> /ip/dns set cache-size=73728
+>> ```
+
+> **3. Importing domains:**
+>> ```shell
+>> /ip/dns/adlist add file=hosts.txt
+>> ```
+
+#### **Removal:**
+
+> **1. Removing domains:**
+>> ```shell
+>> /ip/dns/adlist remove [find file=hosts.txt]
+>> ```
+
+> **2. Clearing DNS cache:**
+>> ```shell
+>> /ip/dns/cache flush
+>> ```
+</details>
