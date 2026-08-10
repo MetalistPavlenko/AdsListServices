@@ -29,23 +29,23 @@
 
 > **2. Change DNS cache size:**
 >> ```shell
->> /ip/dns set cache-size=73728
+>> /ip dns set cache-size=73728
 >> ```
 
 > **3. Importing domains:**
 >> ```shell
->> /ip/dns/adlist add file=hosts.txt
+>> /ip dns adlist add file=hosts.txt ssl-verify=no
 >> ```
 
 #### **Removal:**
 
 > **1. Removing domains:**
 >> ```shell
->> /ip/dns/adlist remove [find file=hosts.txt]
+>> /ip dns adlist remove [find file=hosts.txt]
 >> ```
 
 > **2. Clearing DNS cache:**
 >> ```shell
->> /ip/dns/cache flush
+>> /ip dns cache flush
 >> ```
 </details>
