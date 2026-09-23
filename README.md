@@ -15,7 +15,10 @@
 - **GeoSite for sing-box:**
   [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geosite.srs)
 
-- **GeoSite for xray-core / v2ray-core / mihomo:**
+- **GeoSite for sing-box to v1.11.15:**
+  [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geosite.db)
+
+- **GeoSite for xray-core / v2ray-core / exclave-core / mihomo:**
   [Download database](https://raw.githubusercontent.com/MetalistPavlenko/AdsListServices/main/geosite.dat)
 
 ---
